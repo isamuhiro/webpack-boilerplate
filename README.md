@@ -15,6 +15,15 @@ Navigate to *licalhost:8080*.
 npm run build
 ```
 
+## Run test
+```
+npm run test
+```
+In watch mode:
+```
+npm run start:test
+```
+
 ## License (MIT)
 Copyright 2018, Paweł Preczyński
 
