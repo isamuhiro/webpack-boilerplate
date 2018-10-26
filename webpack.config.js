@@ -27,6 +27,14 @@ module.exports = {
             "plugins": ["@babel/plugin-transform-runtime"]
           }
         }
+      },
+      {
+        test:/\.css$/,
+        use:['style-loader','css-loader']
+      },
+      {
+        test:/\.sass$/,
+        use:['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
