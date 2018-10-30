@@ -4,7 +4,7 @@ const Utils = {
     // --------------------------------
     parseRequestURL : () => {
 
-        let url = location.hash.slice(1).toLowerCase() || '/';
+        let url = window.location.hash.slice(1).toLowerCase() || '/';
         let r = url.split("/")
         let request = {
             resource    : null,
@@ -22,7 +22,7 @@ const Utils = {
     //  Simple sleep implementation
     // --------------------------------
     , sleep: (ms) => {
-        return new Promise(resolve => setTimeout(resolve, ms));
+        return new Promise(resolve => window.setTimeout(resolve, ms));
     }
 }
 
